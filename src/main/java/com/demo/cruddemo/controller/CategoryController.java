@@ -47,7 +47,7 @@ public class CategoryController {
     }
 
     
-    //DELETE - Delete category by id
+    //DELETE - Delete category by id	
     @DeleteMapping("/{id}")
     public void deleteCategory(@PathVariable Long id) {
         Category category = categoryRepository.findById(id)

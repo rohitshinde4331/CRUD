@@ -13,6 +13,16 @@ public class Product {
     @JoinColumn(name = "category_id")
     private Category category;
 
+    
+    
+	public Product(Long id, String name, double price, Category category) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.price = price;
+		this.category = category;
+	}
+
 	public Long getId() {
 		return id;
 	}
@@ -43,6 +53,10 @@ public class Product {
 
 	public void setCategory(Category category) {
 		this.category = category;
+	}
+
+	public Product() {
+		super();
 	}
     
     
